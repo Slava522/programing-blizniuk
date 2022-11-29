@@ -2,18 +2,20 @@
 
 int main()
 {
-    int number1;
-    int number2;
-    int output = 0;
-    
-    printf("введіть перше число: ");
-    scanf("%u", &number1);
-    printf("введіть друге число: ");
-    scanf("%u", &number2);
+        int input;
+        int output = 0;
+        int output2 = 0;
+        int counter = 1;
 
-    for (int i = number1; i <= number2; i++) {
-        output = output + i;
-    }
-    printf("%u", output);
-    return 0;
+        printf("Введіть число: ");
+        scanf("%d", &input);
+
+        while(input/counter >= 1) {
+            output ++;
+            counter *= 10;
+	    output2 +=(input%counter)/(counter/10);
+            input -=input%counter;
+        }
+        printf("\nКількість розрядів числа: %d", output);
+        printf("\nСумма цифр числа: %d", output2);
 }
