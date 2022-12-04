@@ -22,7 +22,7 @@ int main()
             
             if(input/10 != 0) {
                 //числа від 10 до 19
-                if(input/10 < 2){printf("%s ", Snum10[input/10 - 1]);}
+                if(input/10 < 2){printf("%s ", Snum10[input - 10]);}
                 
                 //числа від 20 до 90
                 else{printf("%s ", Snum20[input/10 - 2]);
@@ -42,7 +42,7 @@ int main()
             
             if(input/10 != 0) {
                 //числа від 10 до 19
-                if(input/10 < 2){printf("%s ", Snum10[input/10 - 1]);}
+                if(input/10 < 2){printf("%s ", Snum10[input - 10]);}
                 
                 //числа від 20 до 90
                 else{printf("%s ", Snum20[input/10 - 2]);
@@ -56,7 +56,15 @@ int main()
         
         //двозначні числа
         else if(input >= 10) {
-            
+            if(input/10 < 2){printf("%s ", Snum10[input - 10]);}
+                
+            //числа від 20 до 90
+            else{printf("%s ", Snum20[input/10 - 2]);
+                input -= (input/10)*10;
+                if(input != 0) {
+                    printf("%s ", Snum0[input]);
+                }
+            }
         }
         
         //однозначні числа
