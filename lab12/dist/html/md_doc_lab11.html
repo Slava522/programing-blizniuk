@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторна робота №12: lab11</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторна робота №12
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Взаємодія з користувачем шляхом механізму</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Пошук','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">lab11 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Лабораторна робота № 11. Взаємодія з користувачем шляхом механізму введення/виведення</p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1 ВИМОГИ</p>
+<p>1.1 Розробник</p>
+<p>-&#160; Коваль Владислав; -&#160; студент групи КН-922б;</p><ul>
+<li>01 квітня 2023 року.</li>
+</ul>
+<p>1.2 Загальне завдання</p>
+<ul>
+<li>1.3 Індивідуальне завдання</li>
+</ul>
+<p>(1) Визначити суму двох матриць. &#160; 2 Опис програми</p>
+<p>2.1 Функціональне призначення</p>
+<p>Програма призначена для визначення суми двох матриць.&#160; &#160;&#160; 2.2 Основні функція &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+<p>lib.c <a class="el" href="lib_8h_source.html">lib.h</a> main.c</p>
+<p>Опис роботи:&#160;</p>
+<p>1 Роблю шлях до файлу. 2 Потім якщо щось є, то буду виводити це у консоль. 3 Вводжу елементи та значення матриці. 4 Виводжу строки та столбці. 5 Потім вивільняю пам'ять. 6 Виділяю пам'ять та повертаю вказники пам'яті. 7 Додаю матриці та роблю присвоєння. 8 У <a class="el" href="lib_8h_source.html">lib.h</a> з нового для було -3 це локальна помилка потоку та int add_Matrix(int a, int** b) це прототип. функцій...інші я знав, або бачив часто. 9 У main.c з нового це setlocale(LC_ALL, "") для підключення мов, а fill_Matrix() це вже заповнення потрібними значеннями. &#160; <br  />
+ 2.3 Структура проекту</p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; └──lab11&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ├── Doxyfile &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ├── Makefile &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ├── README.md ├── assets &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; │&#160;&#160; └── input.txt &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ├── doc&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; │&#160;&#160; └── lab11.md &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ├── test &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; └──test.c&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ├── src &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; │&#160;&#160; ├── lib.c &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; │&#160;&#160; ├── <a class="el" href="lib_8h_source.html">lib.h</a> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; │&#160;&#160; └── main.c</p>
+<p>2.4 Варіанти використання Для демонстрації результатів кожної задачі використовується:</p><ul>
+<li>виконання програми в утиліті lldb;</li>
+<li>виконання програми в утиліті rgb;</li>
+<li>видача результатів у консоль за допомогою функції виводу.</li>
+<li>видача результатів через valgrind та побачити чи є утечка пам'яті чи ні. &#160; &#160; ВИСНОВКИ Як висновок можу сказати, що при виконанні даної лабораторної роботи було набуто практичного досвіду роботи з взаємодією з користувачем шляхом механізму введення/виведення, та в мене вийшло зробити одне з завданнь. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

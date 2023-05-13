@@ -1,0 +1,16 @@
+#include "./lib.h"
+
+letters_t letter_1 = {
+    {"Noname", "goofy@gmail.com" }, { "Vladik", "nmfiva@gmail.com" }, "Hello!", "Hello, who are you?", false, UTF16 };
+
+letters_t letter_2 = {
+    { "Sanchez", "sanek@gmail.com" }, { "Vladik", "nmfiva@gmail.com" }, "partyhouse", "Welcome to partyhouse!", false,UTF8 };
+
+letters_t letter_3 = {
+    { "Tromb", "Drucken@gmail.com" }, { "Vladik", "nmfiva@gmail.com" }, "Chess?", "Go to chess tournament tomorow?", false, UTF8};
+
+letters_t letter_4 = {
+    { "Joebiden", "bidenjoe@gmail.com" }, { "Vladik", "nmfiva@gmail.com" }, "from USA", "Hello, welcome to nato!", false, CP1251};
+
+letters_t letter_5 = {
+    { "Vlad", "Traktor@gmail.com" }, { "Vladik", "nmfiva@gmail.com" }, "Help me!", "Hello, help me with English!", true, UTF16};
